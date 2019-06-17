@@ -1,0 +1,17 @@
+calorie extraction
+var str1 = "qwe (100 cal/g) ss";
+var leftP = str1.indexOf( "(" )+1;
+var rightP = str1.indexOf( ")" );
+var part1 = str1.substr(leftP, rightP-leftP);
+console.log( part1 )
+rightP = part1.indexOf( "c" )-1;
+var part2 = part1.substr(0, rightP)
+console.log(part2)
+=================================
+user table
+username, password, firstname, lastname
+
+calorie table
+username, date, type, section #, mealname, qty, cal, comments
+
+medical cards table
